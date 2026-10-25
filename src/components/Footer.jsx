@@ -23,7 +23,7 @@ function Footer() {
                     </section>
                     <section className='col'>
                         <h4>Nuestras tiendas</h4>
-                        <Link to="/" className="btn btn-dark">
+                        <Link to="/nuestras-tiendas" className="btn btn-dark">
                             Ver ubicaciones
                         </Link>
                     </section>
