@@ -1,5 +1,6 @@
 import { Link } from "react-router"
 import { useState } from "react";
+import logo from "../assets/img/orange_logo.svg"
 
 function Navbar() {
 
@@ -8,9 +9,19 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-secondary">
             <div className="container-fluid">
-                <Link to="/" className="navbar-brand">
-                    Market
-                </Link>
+                <div>
+                    <img
+                        src={logo}
+                        alt="Logo de Market"
+                        width="30"
+                        height="30"
+                        className='me-1'
+
+                    />
+                    <Link to="/" className="navbar-brand">
+                        Market
+                    </Link>
+                </div>
                 <button 
                     className="navbar-toggler"
                     type="button"
@@ -36,8 +47,8 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/quienes-somos' className="nav-link">
-                                Quiénes somos
+                            <Link to='/preguntas-frecuentes' className="nav-link">
+                                Preguntas Frecuentes
                             </Link>
                         </li>
                     </ul>
