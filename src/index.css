@@ -1,6 +1,6 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
+  --text: #08060d;
+  --text-h: black;
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
@@ -30,6 +30,7 @@
   }
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
@@ -49,6 +50,8 @@
     filter: invert(1) brightness(2);
   }
 }
+
+*/
 
 body {
   margin: 0;
@@ -119,15 +122,15 @@ footer div section {
 }
 
 .footer-sections > .col:not(:last-child) {
-  border-right: 1px solid var(--bs-border-color);
+  border-right: 2px solid darkgray;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px )and ( min-width: 575.99px) {
   .footer-sections > .col:not(:last-child):not(:nth-last-child(2))  {
-    border-right: 1px solid var(--bs-border-color);;
+    border-right: 1px solid darkgray;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--bs-border-color);
+    border-bottom: 2px solid vdarkgray;
   }
 }
 
@@ -136,6 +139,14 @@ footer div section {
     border-right: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--bs-border-color);
+    border-bottom: 2px solid darkgray;
   }
+}
+
+.tiendas-cards .card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
