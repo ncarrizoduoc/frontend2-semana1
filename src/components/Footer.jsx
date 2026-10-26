@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 function Footer() {
     return (
-        <footer className='bg-body-tertiary my-0 p-4 fw-light'>
+        <footer className='bg-body-secondary my-0 p-4 fw-light'>
             <div className='container-fluid text-start'>
                 <div className='row row-cols-1 row-cols-sm-2 row-cols-md-4 footer-sections'>
                     <section className='col'>
@@ -23,8 +23,8 @@ function Footer() {
                     </section>
                     <section className='col'>
                         <h4>Nuestras tiendas</h4>
-                        <Link to="/nuestras-tiendas" className="btn btn-dark">
-                            Ver ubicaciones
+                        <Link to="/nuestras-tiendas" className="btn btn-secondary">
+                            Ver sucursales
                         </Link>
                     </section>
                     <section className="col">
